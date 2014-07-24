@@ -95,7 +95,7 @@ Usage
 ```
 
 
-Available functions (Express)
+Available functions
 ----
 
 #### app.GrydGet(methodSpec,route,middleware,callback)
