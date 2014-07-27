@@ -1,1 +1,1 @@
-require('./lib/docs');
+module.exports = require('./lib/docs');
