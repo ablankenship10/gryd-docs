@@ -26,7 +26,7 @@ Usage
 ##### Extending Express.js
 ```js
     var express = require('express'),
-        GrydDocs = require('../lib/docs.js');
+        GrydDocs = require('gryd-docs');
 
     //Minimum required configuration
     //The API can be viewed at: http://example.com/api-docs
@@ -74,7 +74,7 @@ Usage
         parameters:[
             GrydDocs.params.path('id')
         ],
-        model: models.Person,
+        model: Person,
         errors:[
             GrydDocs.errors(404,"No Person with given ID")
         ]
@@ -82,12 +82,12 @@ Usage
 
     //Add a new GET route
     app.GrydGet(getPerson,"/person/:id",[middleWare,functions],function(req,res){
-        ...
+        //...
     });
 
     //Feel free to also add undocumented routes as usual
     app.post('/user/:id/secret',function(req,res){
-        ...
+        //...
     });
 
     //Start the server!
