@@ -76,7 +76,8 @@ Usage
         ],
         model: Person,
         errors:[
-            GrydDocs.errors(404,"No Person with given ID")
+            //Parameters: HTTPStatus Code, Error Code(Optional), Message
+            GrydDocs.errors(404, 1000, "No Person with given ID")
         ]
     };
 
@@ -117,6 +118,9 @@ Available functions
 
 Change Log
 ----
+#### 0.1.1
+>Added optional error code field to errors helper function
+
 #### 0.1.0
 >Initial development
 
